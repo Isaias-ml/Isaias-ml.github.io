@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:p="http://www.evolus.vn/Namespace/Pencil" xmlns:html="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safe Motocus</title>
+    <script type="text/javascript" src="Resources/Script.js">
+                    //
+    </script>
+    <style>
+        nav {
+            width: 955px;
+            background-color: rgb(0, 0, 0)
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 4px
+        }
+
+        nav ul li {
+            display: inline-block
+        }
+
+        nav ul li a {
+            font-size: 0.85em;
+            text-decoration: none;
+            color: #FFF;
+            padding: 4px 20px
+        }
+
+        nav ul li a:hover {
+            background-color: #B4531A
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="0">
+                <li class="active"><a href="#tela_de_abertura_page" title="Go to page 'Tela de abertura'">Tela de
+                        abertura</a></li>
+                <li class="active"><a href="#tela_login_page" title="Go to page 'Tela Login'">Tela Login</a></li>
+                <li class="active"><a href="#tela_cadastro_page" title="Go to page 'Tela Cadastro'">Tela Cadastro</a></li>
+                <li class="active"><a href="#tela_inicial_page" title="Go to page 'Tela Inicial'">Tela Inicial</a></li>
+                <li class="active"><a href="#tela_menu_page" title="Go to page 'Tela Menu'">Tela Menu</a></li>
+                <li class="active"><a href="#tela_de_solicita_page" title="Go to page 'Tela Menu'">Tela de Solicitação</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="page">
+        <div id="content">
+            <div class="Page" id="tela_de_abertura_page">
+                <div class="Image"><img src="pages\tela_de_abertura.png" usemap="#map_tela_de_abertura" id="tela_de_abertura_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_de_abertura"><area shape="rect" coords="23,109,433,759"
+                            href="#tela_login_page" /></map>
+                </div>
+            </div>
+            <div class="Page" id="tela_login_page">
+                <div class="Image"><img src="pages\tela_login.png" usemap="#map_tela_login" id="tela_login_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_login"><area shape="rect" coords="23,709,433,759"
+                            href="#tela_cadastro_page" /><area shape="rect" coords="46,499,408,549" href="#tela_inicial_page" /></map>
+                </div>
+            </div>
+            <div class="Page" id="tela_cadastro_page">
+                <div class="Image"><img src="pages\tela_cadastro.png" usemap="#map_tela_cadastro" id="tela_cadastro_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_cadastro"><area shape="rect" coords="47,687,409,737"
+                            href="#tela_login_page" /></map>
+                </div>
+            </div>
+            <div class="Page" id="tela_inicial_page">
+                <div class="Image"><img src="pages\tela_inicial.png" usemap="#map_tela_inicial" id="tela_inicial_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_inicial"><area shape="rect" coords="47,576,409,676"
+                            href="#tela_de_solicita_page" /><area shape="rect" coords="23,109,433,165" href="#tela_menu_page" /></map>
+                </div>
+            </div>
+            <div class="Page" id="tela_de_solicita_page">
+                <div class="Image"><img src="pages\tela_de_solicita.png" usemap="#map_tela_de_solicita" id="tela_de_solicita_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_de_solicita"><area shape="rect" coords="68,326,388,526"
+                            href="#tela_inicial_page" /><area shape="rect" coords="23,109,433,165" href="#tela_menu_page" /></map>
+                </div>
+            </div>
+            <div class="Page" id="tela_menu_page">
+                <div class="Image"><img src="pages\tela_menu.png" usemap="#map_tela_menu" id="tela_menu_page_image" />
+                    <div class="ImageFooter"> </div><map name="map_tela_menu"><area shape="rect" coords="23,341,273,429"
+                            href="#tela_login_page" /><area shape="rect" coords="23,245,273,333" href="#tela_cadastro_page" /><area
+                            shape="rect" coords="23,165,433.000030517578,757" href="#tela_inicial_page" /></map>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
