@@ -2,42 +2,42 @@ var pages = [];
 var pageMap = {};
 var lastShownPageId = null;
 
-function setup () {
+function setup() {
     var style = document.createElement("link");
     style.setAttribute("rel", "stylesheet");
     style.setAttribute("href", "Resources/Style.css");
     document.getElementsByTagName("head")[0].appendChild(style);
-    
+
     var content = document.getElementById("content");
     var children = content.childNodes;
-    
-    for (var i = 0; i < children.length; i ++) {
+
+    for (var i = 0; i < children.length; i++) {
         var child = children[i];
         if (child.className != "Page") continue;
-        
-        
+
+
         var page = {
             id: child.id,
             element: child,
             index: pages.length
         };
-        
+
         pages.push(page);
         pageMap[page.id] = page;
     }
-    
+
 };
 
 function showPage(id) {
     var page = pageMap[id];
     if (!page) return;
-    
-    for (var i = 0; i < pages.length; i ++) {
+
+    for (var i = 0; i < pages.length; i++) {
         pages[i].element.className = "Page";
     }
-    
+
     page.element.className = "Page TargetPage";
-      
+
     lastShownPageId = id;
 };
 
